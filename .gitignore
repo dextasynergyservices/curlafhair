@@ -1,30 +1,49 @@
-/vendor/
-node_modules/
+# Ignore node and composer dependencies
+/frontend/node_modules/
+/backend/vendor/
+
+# Ignore frontend build files
+/frontend/output.css
+/frontend/dist/
+/frontend/.cache/
+/frontend/.vite/
+
+# Ignore logs and temp files
 npm-debug.log
 yarn-error.log
+pnpm-debug.log
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# Laravel-specific ignores
+/backend/bootstrap/compiled.php
+/backend/storage/
+backend/storage/*.key
+/backend/public/storage
+/backend/public/hot
+/backend/public/build
+/backend/public_html/storage
+/backend/public_html/hot
+/backend/.env
+/backend/.env.backup
+/backend/.env.production
+/backend/.phpunit.result.cache
+/backend/.phpactor.json
+/backend/auth.json
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# Laravel Homestead and Vagrant
+/backend/Homestead.yaml
+/backend/Homestead.json
+/backend/.vagrant
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+# System files
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*.swo
+*.tmp
+.idea/
+.vscode/
+*.log
 
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
-
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# Compiled frontend CSS (if not using version control for them)
+frontend/output.css

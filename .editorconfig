@@ -1,0 +1,33 @@
+
+---
+
+### 3. ✅ **`.editorconfig` Setup**
+
+Adding a `.editorconfig` file ensures consistent code formatting across different editors and IDEs for the whole team. Here's a basic `.editorconfig` file:
+
+```ini
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# All files
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# For JavaScript and TypeScript files
+[*.{js,ts}]
+indent_size = 2
+
+# For HTML files
+[*.html]
+indent_size = 2
+
+# For Laravel Blade files
+[*.{blade.php}]
+indent_size = 4

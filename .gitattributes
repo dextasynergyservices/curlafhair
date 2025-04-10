@@ -1,0 +1,18 @@
+# Force LF (Line Feed) endings for all text files, for cross-platform compatibility
+* text=auto
+
+# Treat the following files as text files
+*.html text
+*.js text
+*.css text
+*.php text
+*.json text
+*.md text
+*.yaml text
+*.yml text
+
+# Ensure we don't mess with binary files
+*.jpg binary
+*.png binary
+*.gif binary
+*.mp4 binary
